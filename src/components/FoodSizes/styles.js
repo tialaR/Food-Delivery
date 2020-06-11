@@ -42,6 +42,7 @@ export const SizeButton = styled.TouchableOpacity.attrs({
 `;
 
 export const SizeButtonTxt = styled.Text`
+  font-size: 16px;
   color: ${(props) => (props.selectedSize ? colors.black : colors.grayMedium)};
   font-weight: ${(props) => (props.selectedSize ? '600' : '500')};
 `;

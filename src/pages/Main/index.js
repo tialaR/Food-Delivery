@@ -12,6 +12,7 @@ const Main = () => {
       showsVerticalScrollIndicator={false}
       contentContainerStyle={{
         paddingBottom: 40,
+        paddingTop: 30,
       }}>
       <CategoryTypeFood category="Clássica" type="Marguerita" />
       <FoodSize />
