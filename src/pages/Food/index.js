@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AddButton from '../../components/AddButton';
 import AditionalFoodsList from '../../components/AditionalFoodsList';
 import CartButton from '../../components/CartButton';
@@ -9,9 +9,9 @@ import { CartAndPriceContainer, ContainerScroll } from './styles';
 const Food = ({ route }) => {
   const { food } = route.params;
 
-  // useEffect(() => {
-  //   console.warn(food);
-  // }, []);
+  useEffect(() => {
+    console.warn(food);
+  }, []);
 
   return (
     <ContainerScroll
@@ -20,8 +20,8 @@ const Food = ({ route }) => {
         paddingBottom: 40,
         paddingTop: 30,
       }}>
-      <CategoryTypeFood category="Clássica" type={food.name} />
-      <FoodSize prices={food.prices} />
+      <CategoryTypeFood category={food.category} type={food.name} />
+      <FoodSize prices={food.prices} image={food.image} />
       <AditionalFoodsList />
       <CartAndPriceContainer>
         <AddButton />

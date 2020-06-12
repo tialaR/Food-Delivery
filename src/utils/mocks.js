@@ -19,7 +19,10 @@ export const pizzas = [
     options: [
       {
         id: 0,
-        name: 'Americana',
+        category: 'Clássica',
+        name: 'Presunto',
+        image:
+          'https://multarte.com.br/wp-content/uploads/2019/03/pizza-png-transparente5.png',
         prices: {
           price_small: 22.9,
           price_medium: 32.9,
@@ -29,7 +32,9 @@ export const pizzas = [
       },
       {
         id: 1,
+        category: 'Clássica',
         name: 'Atum',
+        image: 'https://alcapizza.com.br/wp-content/uploads/2018/02/Atum.png',
         prices: {
           price_small: 22.9,
           price_medium: 32.9,
@@ -39,7 +44,10 @@ export const pizzas = [
       },
       {
         id: 2,
+        category: 'Clássica',
         name: 'Calabresa',
+        image:
+          'https://gulapizza.com/wp-content/uploads/2020/03/gula-pizza-calabresa.png',
         prices: {
           price_small: 22.9,
           price_medium: 32.9,
@@ -49,7 +57,10 @@ export const pizzas = [
       },
       {
         id: 3,
+        category: 'Clássica',
         name: 'Frango c/ catupiry',
+        image:
+          'https://paradisepizzaria.com.br/site/img/produtos/281485_1_g.png',
         prices: {
           price_small: 22.9,
           price_medium: 32.9,
@@ -59,7 +70,10 @@ export const pizzas = [
       },
       {
         id: 4,
+        category: 'Clássica',
         name: 'Margherita',
+        image:
+          'https://paradisepizzaria.com.br/site/img/produtos/281473_1_g.png',
         prices: {
           price_small: 22.9,
           price_medium: 32.9,
@@ -69,7 +83,10 @@ export const pizzas = [
       },
       {
         id: 5,
+        category: 'Clássica',
         name: 'Mussarela',
+        image:
+          'https://nypizzapatrol.com/wp-content/uploads/2018/12/4-queijos.png',
         prices: {
           price_small: 22.9,
           price_medium: 32.9,
@@ -79,7 +96,10 @@ export const pizzas = [
       },
       {
         id: 6,
+        category: 'Clássica',
         name: 'Portuguesa',
+        image:
+          'https://nypizzapatrol.com/wp-content/uploads/2017/03/Portuguesa.png',
         prices: {
           price_small: 22.9,
           price_medium: 32.9,
@@ -97,7 +117,10 @@ export const pizzas = [
       },
       {
         id: 7,
+        category: 'Clássica',
         name: 'Bacon',
+        image:
+          'https://paradisepizzaria.com.br/site/img/produtos/281497_1_g.png',
         prices: {
           price_small: 22.9,
           price_medium: 32.9,
@@ -107,7 +130,10 @@ export const pizzas = [
       },
       {
         id: 8,
+        category: 'Clássica',
         name: 'Alho',
+        image:
+          'https://i1.wp.com/multarte.com.br/wp-content/uploads/2019/03/pizza-png-fundo-transparente-imagem-alho-oleo.png?fit=600%2C600&ssl=1',
         prices: {
           price_small: 22.9,
           price_medium: 32.9,
@@ -122,7 +148,10 @@ export const pizzas = [
     options: [
       {
         id: 0,
-        name: 'Camarão c/ catupiry',
+        category: 'Especial',
+        name: 'Camarão',
+        image:
+          'https://habituefit.com.br/arquivos/produtos/imagens/14/original/camaraopng.png',
         prices: {
           price_small: 32.9,
           price_medium: 46.9,
@@ -132,7 +161,9 @@ export const pizzas = [
       },
       {
         id: 1,
+        category: 'Especial',
         name: 'Carne seca ao barbecue',
+        image: 'https://www.pizzarialuiz.com.br/imagens_prod/35685atum.png',
         prices: {
           price_small: 32.9,
           price_medium: 46.9,
@@ -151,17 +182,30 @@ export const pizzas = [
       },
       {
         id: 2,
-        name: 'Quatro queijos',
+        category: 'Especial',
+        name: 'Quatro queijos c/ brócolis',
+        image:
+          'https://paradisepizzaria.com.br/site/img/produtos/281769_1_g.png',
         prices: {
           price_small: 32.9,
           price_medium: 46.9,
           price_large: 58.9,
         },
-        ingredients: [, 'mussarela', 'gorgonzola', 'provolone', 'catupiry'],
+        ingredients: [
+          ,
+          'mussarela',
+          'brócolis',
+          'gorgonzola',
+          'provolone',
+          'catupiry',
+        ],
       },
       {
         id: 3,
+        category: 'Especial',
         name: 'Filé Mingon',
+        image:
+          'https://paradisepizzaria.com.br/site/img/produtos/281483_1_g.png',
         prices: {
           price_small: 32.9,
           price_medium: 46.9,
@@ -183,7 +227,10 @@ export const pizzas = [
     options: [
       {
         id: 0,
+        category: 'Doce',
         name: 'Brigadeiro',
+        image:
+          'https://alcapizza.com.br/wp-content/uploads/2018/02/chocolate-preto.png',
         prices: {
           price_small: 18.9,
           price_medium: 25.9,
@@ -193,17 +240,10 @@ export const pizzas = [
       },
       {
         id: 1,
-        name: 'Beijinho',
-        prices: {
-          price_small: 18.9,
-          price_medium: 25.9,
-          price_large: 32.9,
-        },
-        ingredients: ['leite condensado', 'coco ralado'],
-      },
-      {
-        id: 2,
+        category: 'Doce',
         name: 'Prestígio',
+        image:
+          'https://pizzariadodudu.com.br/wp-content/uploads/2019/06/PREST%C3%8DGIO-CREME-DE-CHOCOLATE-COBERTA-COM-COCO-RALADO-300x300.png',
         prices: {
           price_small: 18.9,
           price_medium: 25.9,

@@ -4,7 +4,7 @@ import { sizes } from '../../utils/mocks';
 import PriceDescription from '../PriceDescription';
 import { Container, FoodImageContainer, SizeButton, SizeButtonTxt, SizesButtonsRadioGroup, StyledAnimatedFoodImage } from './styles';
 
-const FoodSizes = ({ prices }) => {
+const FoodSizes = ({ prices, image }) => {
   const [selectedButton, setSelectedButton] = useState(sizes[0].key);
   const [foodPrices, setFoodPrices] = useState(prices.price_small);
 
@@ -63,6 +63,7 @@ const FoodSizes = ({ prices }) => {
     <Container>
       <FoodImageContainer>
         <StyledAnimatedFoodImage
+          source={{ uri: image }}
           style={{
             transform: [{ rotate: rotate }, { scale: expandSizeFood }],
           }}

@@ -12,7 +12,6 @@ export const ContainerFood = styled.TouchableOpacity.attrs({
 `;
 
 export const FoodImage = styled.Image.attrs({
-  source: require('../../assets/pizza4.png'),
   resizeMode: 'contain',
 })`
   width: 120px;
@@ -29,7 +28,9 @@ export const FoodNameTxt = styled.Text`
   color: ${colors.black};
 `;
 
-export const FoodIngredientsTxt = styled.Text`
+export const FoodIngredientsTxt = styled.Text.attrs({
+  numberOfLines: 2,
+})`
   font-size: 12px;
   color: ${colors.grayMedium};
   padding-top: 4px;

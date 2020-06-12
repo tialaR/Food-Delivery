@@ -11,7 +11,7 @@ export const FoodImageContainer = styled.View`
 `;
 
 const FoodImage = styled.Image.attrs({
-  source: require('../../assets/pizza4.png'),
+  resizeMode: 'contain',
 })`
   width: 260px;
   height: 260px;

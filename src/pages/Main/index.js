@@ -9,7 +9,7 @@ const Main = ({ navigation }) => {
   function renderFood({ item }) {
     return (
       <FoodCard
-        foodImage=""
+        foodImage={item.image}
         foodName={item.name}
         foodIngredients={item.ingredients}
         foodMinPrice={item.prices.price_small}
