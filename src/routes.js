@@ -2,6 +2,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import 'react-native-gesture-handler';
+import Food from './pages/Food';
 import Main from './pages/Main';
 import { colors } from './styles/colors';
 
@@ -43,6 +44,13 @@ function Routes() {
             title: 'Food Delivery',
           }}
           component={Main}
+        />
+        <Stack.Screen
+          name="FoodScreen"
+          options={{
+            title: 'Food Delivery',
+          }}
+          component={Food}
         />
       </Stack.Navigator>
     </NavigationContainer>

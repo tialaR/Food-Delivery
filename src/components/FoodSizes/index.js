@@ -4,8 +4,9 @@ import { sizes } from '../../utils/mocks';
 import PriceDescription from '../PriceDescription';
 import { Container, FoodImageContainer, SizeButton, SizeButtonTxt, SizesButtonsRadioGroup, StyledAnimatedFoodImage } from './styles';
 
-const FoodSizes = () => {
+const FoodSizes = ({ prices }) => {
   const [selectedButton, setSelectedButton] = useState(sizes[0].key);
+  const [foodPrices, setFoodPrices] = useState(prices.price_small);
 
   const rotateFood = new Animated.Value(0);
   const expandSizeFood = new Animated.Value(0.8);
@@ -36,6 +37,16 @@ const FoodSizes = () => {
     } else {
       animatedExpandSizeFood(1.1);
     }
+  }, [foodPrices]);
+
+  useEffect(() => {
+    if (selectedButton === sizes[0].key) {
+      setFoodPrices(prices.price_small);
+    } else if (selectedButton === sizes[1].key) {
+      setFoodPrices(prices.price_medium);
+    } else {
+      setFoodPrices(prices.price_large);
+    }
   }, [selectedButton]);
 
   const rotate = rotateFood.interpolate({
@@ -57,7 +68,7 @@ const FoodSizes = () => {
           }}
         />
       </FoodImageContainer>
-      <PriceDescription price="12,90" />
+      <PriceDescription price={foodPrices} />
       <SizesButtonsRadioGroup>
         {sizes.map((size, index) => (
           <SizeButton
