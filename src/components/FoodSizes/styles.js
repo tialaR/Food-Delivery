@@ -38,11 +38,12 @@ export const SizeButton = styled.TouchableOpacity.attrs({
   height: 50px;
   border-radius: 24px;
   background-color: ${(props) =>
-    props.selectedSize ? colors.primary : colors.grayLight};
+    props.selectedSize ? colors.primary : colors.grayMediumOpaque};
 `;
 
 export const SizeButtonTxt = styled.Text`
   font-size: 16px;
-  color: ${(props) => (props.selectedSize ? colors.black : colors.grayMedium)};
+  color: ${(props) =>
+    props.selectedSize ? colors.grayDark : colors.grayLight};
   font-weight: ${(props) => (props.selectedSize ? '600' : '500')};
 `;

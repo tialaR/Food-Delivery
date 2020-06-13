@@ -1,21 +1,23 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
+import { View } from 'react-native';
 import 'react-native-gesture-handler';
 import Food from './pages/Food';
 import Main from './pages/Main';
 import { colors } from './styles/colors';
+import { HeaderImage, HeaderTitle } from './styles/styles';
 
 const Stack = createStackNavigator();
 
-// function LogoTitle() {
-//   return (
-//     <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-//       <HeaderImage />
-//       <HeaderTitle>song box</HeaderTitle>
-//     </View>
-//   );
-// }
+function LogoTitle() {
+  return (
+    <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+      <HeaderImage />
+      <HeaderTitle>Hungry for pizza</HeaderTitle>
+    </View>
+  );
+}
 
 function Routes() {
   return (
@@ -36,7 +38,7 @@ function Routes() {
             shadowOpacity: 0.34,
             shadowRadius: 6.27,
           },
-          // headerTitle: () => <LogoTitle />,
+          headerTitle: () => <LogoTitle />,
         }}>
         <Stack.Screen
           name="MainScreen"

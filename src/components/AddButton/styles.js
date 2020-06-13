@@ -21,7 +21,7 @@ export const Add = styled.TouchableOpacity`
 
 export const AddTxt = styled.Text`
   font-size: 20px;
-  color: ${colors.black};
+  color: ${colors.grayDark};
 `;
 
 export const Value = styled.View`
@@ -33,7 +33,7 @@ export const Value = styled.View`
 
 export const ValueTxt = styled.Text`
   font-size: 16px;
-  color: ${colors.black};
+  color: ${colors.grayDark};
   font-weight: 600;
 `;
 
@@ -46,5 +46,5 @@ export const Decrease = styled.TouchableOpacity`
 
 export const DecreaseTxt = styled.Text`
   font-size: 20px;
-  color: ${colors.black};
+  color: ${colors.grayDark};
 `;

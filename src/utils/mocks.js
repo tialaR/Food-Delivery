@@ -120,7 +120,7 @@ export const pizzas = [
         category: 'Clássica',
         name: 'Bacon',
         image:
-          'https://paradisepizzaria.com.br/site/img/produtos/281497_1_g.png',
+          'https://www.diadepizza.com.br/uploads/pizzas/nome-aqui-1466684129.png',
         prices: {
           price_small: 22.9,
           price_medium: 32.9,

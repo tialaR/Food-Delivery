@@ -4,8 +4,10 @@ export const colors = {
   primaryDark: '#caa052',
   background: '#fafafa',
   shadow: 'rgba(0, 0, 0, 0.2)',
-  black: '#121212',
+  black: '#121415',
   white: '#FFF',
-  grayMedium: '#aebfbe',
-  grayLight: 'rgba(174, 191, 190, 0.06)',
+  grayDark: '#333941',
+  grayMedium: '#68788e',
+  grayLight: '#abbace',
+  grayMediumOpaque: 'rgba(104, 120, 142, 0.03)',
 };

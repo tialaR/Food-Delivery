@@ -23,6 +23,6 @@ export const FoodName = styled.Text`
 export const FoodIngredients = styled.Text`
   font-size: 12px;
   text-align: center;
-  color: ${colors.grayMedium};
+  color: ${colors.grayLight};
   padding: 6px 32px 0 32px;
 `;

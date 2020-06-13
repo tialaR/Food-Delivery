@@ -6,7 +6,7 @@ export const ContainerFood = styled.TouchableOpacity.attrs({
 })`
   padding: 20px 20px 24px 20px;
   border-radius: 14px;
-  background-color: ${colors.grayLight};
+  background-color: ${colors.grayMediumOpaque};
   justify-content: center;
   align-items: center;
 `;
@@ -27,14 +27,14 @@ export const FoodNameTxt = styled.Text.attrs({
   numberOfLines: 1,
 })`
   font-size: 16px;
-  color: ${colors.black};
+  color: ${colors.grayDark};
 `;
 
 export const FoodIngredientsTxt = styled.Text.attrs({
   numberOfLines: 2,
 })`
   font-size: 12px;
-  color: ${colors.grayMedium};
+  color: ${colors.grayLight};
   padding-top: 4px;
 `;
 
