@@ -4,7 +4,7 @@ import { colors } from '../../styles/colors';
 export const ContainerFood = styled.TouchableOpacity.attrs({
   activeOpacity: 0.7,
 })`
-  padding: 20px 20px 26px 20px;
+  padding: 20px 20px 20px 20px;
   border-radius: 14px;
   background-color: ${colors.grayLight};
   justify-content: center;
@@ -19,7 +19,7 @@ export const FoodImage = styled.Image.attrs({
 `;
 
 export const FoodDescriptionsContainer = styled.View`
-  padding-top: 14px;
+  padding-top: 6px;
   width: 120px;
 `;
 

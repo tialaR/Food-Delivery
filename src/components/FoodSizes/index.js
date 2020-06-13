@@ -23,7 +23,7 @@ const FoodSizes = ({ prices, image }) => {
   function animatedExpandSizeFood(size) {
     Animated.spring(expandSizeFood, {
       toValue: size,
-      friction: 4,
+      friction: 8,
       useNativeDriver: true,
     }).start();
   }
@@ -51,7 +51,7 @@ const FoodSizes = ({ prices, image }) => {
 
   const rotate = rotateFood.interpolate({
     inputRange: [0, 1],
-    outputRange: ['0deg', '240deg'],
+    outputRange: ['0deg', '90deg'],
   });
 
   const expand = expandSizeFood.interpolate({

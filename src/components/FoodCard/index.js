@@ -1,4 +1,5 @@
 import React from 'react';
+import { numberToReal } from '../../utils/resources';
 import { ContainerFood, FoodDescriptionsContainer, FoodImage, FoodIngredientsTxt, FoodNameTxt, FoodPriceTxt } from './styles';
 
 const FoodCard = ({
@@ -14,7 +15,7 @@ const FoodCard = ({
       <FoodDescriptionsContainer>
         <FoodNameTxt>{foodName}</FoodNameTxt>
         <FoodIngredientsTxt>{foodIngredients.join(', ')}</FoodIngredientsTxt>
-        <FoodPriceTxt>{foodMinPrice}</FoodPriceTxt>
+        <FoodPriceTxt>{numberToReal(foodMinPrice)}</FoodPriceTxt>
       </FoodDescriptionsContainer>
     </ContainerFood>
   );

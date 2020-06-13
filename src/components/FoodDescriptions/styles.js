@@ -16,3 +16,9 @@ export const FoodName = styled.Text`
   color: ${colors.grayMedium};
   padding-top: 6px;
 `;
+
+export const FoodIngredients = styled.Text`
+  font-size: 12px;
+  color: ${colors.grayMedium};
+  padding-top: 4px;
+`;

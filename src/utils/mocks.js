@@ -260,13 +260,13 @@ export const aditionalFoods = [
     id: 0,
     text: 'Mussarela',
     image:
-      'https://lh3.googleusercontent.com/proxy/r2VmDkmmq7p489uu1Ox0Pnodn_IKizaLIZJrV4KpEIY6Nc8BcNUf5WmBwI-4eyeWdbpWC9_3sSi7Y3Nu9ZYVz-rWaYualotQW8MWqdyhaK2U0SBShlQ79xk',
+      'https://lh3.googleusercontent.com/proxy/PUBA-i44lfStmMn9oTE30guMagelWMolt7kv9laK2GKhrqUsGUByJx15q21j9yZ2nu-WWssyVliJDxOSghHMqwuoYz5yi29c8lW_7Ge5OG25uMur_FOByWgsIVoiGa7Nqw',
   },
   {
     id: 1,
     text: 'Gorgonzola',
     image:
-      'https://lh3.googleusercontent.com/proxy/pWmwXmbBOSWxAqFkfw7Vm-WmSO1aHFvcA8c0ucrxo5vbVSLRhmjjwKBBgMIWIrvWej3VzfHXug0DgM3N7wDYCKDtHhoz04DZ9pyTRFm8g7gCyW-hFIP3ljc0mtY5fw',
+      'https://i.pinimg.com/originals/33/bf/5a/33bf5aac9aba91d8a7d5134ac7d66385.png',
   },
   {
     id: 2,

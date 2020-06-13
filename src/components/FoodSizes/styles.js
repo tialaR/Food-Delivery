@@ -5,7 +5,7 @@ import { colors } from '../../styles/colors';
 export const Container = styled.View``;
 
 export const FoodImageContainer = styled.View`
-  padding-top: 40px;
+  padding-top: 20px;
   align-items: center;
   justify-content: center;
 `;
