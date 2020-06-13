@@ -4,7 +4,7 @@ import { colors } from '../../styles/colors';
 export const ContainerFood = styled.TouchableOpacity.attrs({
   activeOpacity: 0.7,
 })`
-  padding: 20px 20px 20px 20px;
+  padding: 20px 20px 24px 20px;
   border-radius: 14px;
   background-color: ${colors.grayLight};
   justify-content: center;
@@ -19,11 +19,13 @@ export const FoodImage = styled.Image.attrs({
 `;
 
 export const FoodDescriptionsContainer = styled.View`
-  padding-top: 6px;
+  padding-top: 10px;
   width: 120px;
 `;
 
-export const FoodNameTxt = styled.Text`
+export const FoodNameTxt = styled.Text.attrs({
+  numberOfLines: 1,
+})`
   font-size: 16px;
   color: ${colors.black};
 `;
@@ -38,6 +40,7 @@ export const FoodIngredientsTxt = styled.Text.attrs({
 
 export const FoodPriceTxt = styled.Text`
   font-size: 16px;
-  color: ${colors.black};
-  padding-top: 8px;
+  color: ${colors.primaryDark};
+  font-weight: 700,
+  padding-top: 14px;
 `;

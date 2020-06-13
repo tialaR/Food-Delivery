@@ -8,17 +8,21 @@ export const Container = styled.View`
 
 export const CategoryTitle = styled.Text`
   font-size: 28px;
+  text-align: center;
+  padding: 0 32px;
   color: ${colors.black};
 `;
 
 export const FoodName = styled.Text`
   font-size: 14px;
+  text-align: center;
   color: ${colors.grayMedium};
-  padding-top: 6px;
+  padding: 12px 32px 0 32px;
 `;
 
 export const FoodIngredients = styled.Text`
   font-size: 12px;
+  text-align: center;
   color: ${colors.grayMedium};
-  padding-top: 4px;
+  padding: 6px 32px 0 32px;
 `;

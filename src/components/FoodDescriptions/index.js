@@ -1,4 +1,5 @@
 import React from 'react';
+import { formatArrayOfStrings } from '../../utils/resources';
 import { CategoryTitle, Container, FoodIngredients, FoodName } from './styles';
 
 const FoodDescriptions = ({ category, type, ingredients }) => {
@@ -6,7 +7,7 @@ const FoodDescriptions = ({ category, type, ingredients }) => {
     <Container>
       <CategoryTitle>{category}</CategoryTitle>
       <FoodName>Pizza de {type}</FoodName>
-      <FoodIngredients>{ingredients.join(', ')}</FoodIngredients>
+      <FoodIngredients>{formatArrayOfStrings(ingredients)}</FoodIngredients>
     </Container>
   );
 };

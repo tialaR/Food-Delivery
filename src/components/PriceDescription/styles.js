@@ -11,7 +11,8 @@ export const PriceTitleTxt = styled.Text`
 `;
 
 export const PriceValueTxt = styled.Text`
-  font-size: 24px;
-  color: ${colors.black};
+  font-size: 22px;
+  font-weight: 700;
+  color: ${colors.primaryDark};
   padding-top: 8px;
 `;

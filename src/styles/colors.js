@@ -6,6 +6,6 @@ export const colors = {
   shadow: 'rgba(0, 0, 0, 0.2)',
   black: '#121212',
   white: '#FFF',
-  grayMedium: '#b0bec5',
-  grayLight: '#f5f5f5',
+  grayMedium: '#aebfbe',
+  grayLight: 'rgba(174, 191, 190, 0.06)',
 };
