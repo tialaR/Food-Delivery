@@ -6,7 +6,7 @@ const FoodDescriptions = ({ category, type, ingredients }) => {
   return (
     <Container>
       <CategoryTitle>{category}</CategoryTitle>
-      <FoodName>Pizza de {type}</FoodName>
+      <FoodName>Pizza - {type}</FoodName>
       <FoodIngredients>{formatArrayOfStrings(ingredients)}</FoodIngredients>
     </Container>
   );

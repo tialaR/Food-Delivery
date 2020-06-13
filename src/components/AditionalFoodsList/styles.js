@@ -20,6 +20,19 @@ export const AditionnalFoodContainer = styled.TouchableOpacity.attrs({
   border-radius: 14px;
   align-items: center;
   justify-content: center;
+  position: relative;
+`;
+
+export const AditionnalFoodPriceContainer = styled.View`
+  position: absolute;
+  left: 6;
+  top: 4;
+`;
+
+export const AditionalFoodPrice = styled.Text`
+  font-size: 12px;
+  font-weight: 600;
+  color: ${colors.primaryDark};
 `;
 
 export const FoodImage = styled.Image.attrs({
@@ -27,6 +40,7 @@ export const FoodImage = styled.Image.attrs({
 })`
   width: 60px;
   height: 60px;
+  margin-top: 16px;
 `;
 
 export const AditionnalFoodTxt = styled.Text`

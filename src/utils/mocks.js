@@ -259,34 +259,40 @@ export const aditionalFoods = [
   {
     id: 0,
     text: 'Mussarela',
+    price: 2.5,
     image:
-      'https://lh3.googleusercontent.com/proxy/PUBA-i44lfStmMn9oTE30guMagelWMolt7kv9laK2GKhrqUsGUByJx15q21j9yZ2nu-WWssyVliJDxOSghHMqwuoYz5yi29c8lW_7Ge5OG25uMur_FOByWgsIVoiGa7Nqw',
+      'https://lh3.googleusercontent.com/proxy/tcwYfv_EtkooBwN4MXdtMwiyPKO2_yoobWDdgdfFqU8zyAzmKMBAnQdC9Qv5t7YjS3Yyh966kWkQDtbK7PEJbSnaY2eXVMfClvL7CSIm0D-EzveO2Scg_YU',
   },
   {
     id: 1,
     text: 'Gorgonzola',
+    price: 5.65,
     image:
       'https://i.pinimg.com/originals/33/bf/5a/33bf5aac9aba91d8a7d5134ac7d66385.png',
   },
   {
     id: 2,
     text: 'Bacon',
+    price: 4.0,
     image: 'https://pngimg.com/uploads/bacon/bacon_PNG10916.png',
   },
   {
     id: 3,
     text: 'Peperoni',
+    price: 8.97,
     image: 'https://lotsa.com/wp-content/uploads/2017/10/pepperoni.png',
   },
   {
     id: 4,
     text: 'Presunto',
+    price: 2.5,
     image:
       'https://polenghi.com.br/content/images/recipes/ingredient/y55efm9l9coigpkmjazia4i.png',
   },
   {
     id: 5,
     text: 'Shitak',
+    price: 9.5,
     image:
       'https://cdnstatic8.com/freshorganicos.com.br/wp-content/uploads/2018/04/585ea62ccb11b227491c352b-1.png',
   },

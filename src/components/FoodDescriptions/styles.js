@@ -14,7 +14,7 @@ export const CategoryTitle = styled.Text`
 `;
 
 export const FoodName = styled.Text`
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   color: ${colors.grayMedium};
   padding: 12px 32px 0 32px;

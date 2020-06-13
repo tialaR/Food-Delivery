@@ -5,8 +5,17 @@ export function numberToReal(numero) {
 }
 
 export function formatArrayOfStrings(stringArray) {
+  let firstString = String(stringArray.slice(0, 1));
+  let firstStringAux =
+    firstString.charAt(0).toUpperCase() + firstString.slice(1);
+
   const stringArrayAux =
-    stringArray.slice(0, -1).join(', ') + ' e ' + stringArray.slice(-1) + '.';
+    firstStringAux +
+    ', ' +
+    stringArray.slice(1, -1).join(', ') +
+    ' e ' +
+    stringArray.slice(-1) +
+    '.';
 
   return stringArrayAux;
 }

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { FlatList } from 'react-native';
 import { aditionalFoods } from '../../utils/mocks';
-import { AditionnalFoodContainer, AditionnalFoodTxt, Container, FoodImage } from './styles';
+import { numberToReal } from '../../utils/resources';
+import { AditionalFoodPrice, AditionnalFoodContainer, AditionnalFoodPriceContainer, AditionnalFoodTxt, Container, FoodImage } from './styles';
 
 const AditionalFoodsList = () => {
   const [selectedItems, setSelectedItems] = useState([]);
@@ -23,6 +24,9 @@ const AditionalFoodsList = () => {
         <AditionnalFoodContainer
           selected={selectedItems.includes(item.id)}
           onPress={() => handleSelectItem(item.id)}>
+          <AditionnalFoodPriceContainer>
+            <AditionalFoodPrice>{numberToReal(item.price)}</AditionalFoodPrice>
+          </AditionnalFoodPriceContainer>
           <FoodImage source={{ uri: item.image }} />
         </AditionnalFoodContainer>
         <AditionnalFoodTxt>{item.text}</AditionnalFoodTxt>

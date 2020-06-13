@@ -10,5 +10,5 @@ export const CartAndPriceContainer = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 32px 0 32px;
+  padding: 40px 32px 0 32px;
 `;

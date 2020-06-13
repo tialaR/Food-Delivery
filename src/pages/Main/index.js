@@ -1,7 +1,8 @@
 import React from 'react';
 import { FlatList, View } from 'react-native';
 import FoodCard from '../../components/FoodCard';
-import { RowSpace, SectionTitle } from '../../styles/styles';
+import SectionTitle from '../../components/SectionTitle';
+import { RowSpace } from '../../styles/styles';
 import { pizzas } from '../../utils/mocks';
 import { ContainerScroll } from './styles';
 
@@ -22,7 +23,7 @@ const Main = ({ navigation }) => {
     <ContainerScroll>
       {pizzas.map((_, index) => (
         <>
-          <SectionTitle>{pizzas[index].category}</SectionTitle>
+          <SectionTitle title={pizzas[index].category} />
           <FlatList
             contentContainerStyle={{
               paddingHorizontal: 32,
