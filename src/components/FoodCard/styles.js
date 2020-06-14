@@ -42,5 +42,5 @@ export const FoodPriceTxt = styled.Text`
   font-size: 16px;
   color: ${colors.primaryDark};
   font-weight: 700,
-  padding-top: 14px;
+  padding-top: 20px;
 `;

@@ -34,7 +34,7 @@ export const Value = styled.View`
 export const ValueTxt = styled.Text`
   font-size: 16px;
   color: ${colors.grayDark};
-  font-weight: 600;
+  font-weight: bold;
 `;
 
 export const Decrease = styled.TouchableOpacity`

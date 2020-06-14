@@ -148,7 +148,6 @@
 				CE9C080B7E2744E19DDB7078 /* Pods-PizzaDelivery-tvOSTests.debug.xcconfig */,
 				58112FFB7ED28ED212C2B95A /* Pods-PizzaDelivery-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
