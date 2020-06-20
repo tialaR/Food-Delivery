@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import { Animated, Easing } from 'react-native';
 import { sizes } from '../../utils/mocks';
 import {
@@ -81,4 +81,4 @@ const AnimatedFoodSize = ({ image, selectedFoodSize }) => {
   );
 };
 
-export default AnimatedFoodSize;
+export default memo(AnimatedFoodSize);

@@ -261,7 +261,7 @@ export const aditionalFoods = [
     text: 'Mussarela',
     price: 2.5,
     image:
-      'https://lh3.googleusercontent.com/proxy/tcwYfv_EtkooBwN4MXdtMwiyPKO2_yoobWDdgdfFqU8zyAzmKMBAnQdC9Qv5t7YjS3Yyh966kWkQDtbK7PEJbSnaY2eXVMfClvL7CSIm0D-EzveO2Scg_YU',
+      'https://drwfxyu78e9uq.cloudfront.net/usercontent/greenbeans/media/images/92298b3-queijo-fatiado-a-granel.png',
   },
   {
     id: 1,
@@ -286,8 +286,7 @@ export const aditionalFoods = [
     id: 4,
     text: 'Presunto',
     price: 2.5,
-    image:
-      'https://polenghi.com.br/content/images/recipes/ingredient/y55efm9l9coigpkmjazia4i.png',
+    image: 'https://pngimage.net/wp-content/uploads/2018/06/presunto-png-3.png',
   },
   {
     id: 5,
