@@ -2,19 +2,30 @@ import React, { useState } from 'react';
 import { FlatList } from 'react-native';
 import { aditionalFoods } from '../../utils/mocks';
 import { numberToReal } from '../../utils/resources';
-import { AditionalFoodPrice, AditionnalFoodContainer, AditionnalFoodPriceContainer, AditionnalFoodTxt, Container, FoodImage } from './styles';
+import {
+  AditionalFoodPrice,
+  AditionnalFoodContainer,
+  AditionnalFoodPriceContainer,
+  AditionnalFoodTxt,
+  Container,
+  FoodImage
+} from './styles';
 
-const AditionalFoodsList = () => {
+const AditionalFoodsList = ({ onPressAditionalFood }) => {
   const [selectedItems, setSelectedItems] = useState([]);
 
+  //Seleciona o item adicional e cria um array de itens adicionais
   function handleSelectItem(id) {
-    const alreadySelected = selectedItems.findIndex((item) => item === id);
+    const alreadySelected = selectedItems.findIndex((item) => item.id === id);
 
     if (alreadySelected >= 0) {
-      const filteredItems = selectedItems.filter((item) => item !== id);
+      const filteredItems = selectedItems.filter((item) => item.id !== id);
       setSelectedItems(filteredItems);
+
+      onPressAditionalFood(filteredItems);
     } else {
-      setSelectedItems([...selectedItems, id]);
+      setSelectedItems([...selectedItems, aditionalFoods[id]]);
+      onPressAditionalFood([...selectedItems, aditionalFoods[id]]);
     }
   }
 
@@ -22,7 +33,7 @@ const AditionalFoodsList = () => {
     return (
       <Container>
         <AditionnalFoodContainer
-          selected={selectedItems.includes(item.id)}
+          selected={selectedItems.includes(item)}
           onPress={() => handleSelectItem(item.id)}>
           <AditionnalFoodPriceContainer>
             <AditionalFoodPrice>{numberToReal(item.price)}</AditionalFoodPrice>

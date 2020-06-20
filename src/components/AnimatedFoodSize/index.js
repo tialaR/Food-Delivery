@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { Animated, Easing } from 'react-native';
 import { sizes } from '../../utils/mocks';
-import PriceDescription from '../PriceDescription';
-import { Container, FoodImageContainer, SizeButton, SizeButtonTxt, SizesButtonsRadioGroup, StyledAnimatedFoodImage } from './styles';
+import {
+  Container,
+  FoodImageContainer,
+  StyledAnimatedFoodImage
+} from './styles';
 
-const FoodSizes = ({ prices, image }) => {
-  const [selectedButton, setSelectedButton] = useState(sizes[0].key);
-  const [foodPrices, setFoodPrices] = useState(prices.price_small);
+const AnimatedFoodSize = ({ image, selectedFoodSize }) => {
+  const [animateExpand, setAnimateExpand] = useState(0);
 
   const rotateFood = new Animated.Value(0);
   const expandSizeFood = new Animated.Value(0.8);
 
+  //Animação de rotação
   function animateRotateFood() {
     Animated.timing(rotateFood, {
       toValue: 1,
@@ -20,6 +23,7 @@ const FoodSizes = ({ prices, image }) => {
     }).start();
   }
 
+  //Animação de expansão
   function animatedExpandSizeFood(size) {
     Animated.spring(expandSizeFood, {
       toValue: size,
@@ -28,32 +32,36 @@ const FoodSizes = ({ prices, image }) => {
     }).start();
   }
 
+  //Animação rotação e expansão
   useEffect(() => {
     animateRotateFood();
-    if (selectedButton === sizes[0].key) {
+    if (selectedFoodSize === sizes[0].key) {
       animatedExpandSizeFood(0.9);
-    } else if (selectedButton === sizes[1].key) {
+    } else if (selectedFoodSize === sizes[1].key) {
       animatedExpandSizeFood(1);
     } else {
       animatedExpandSizeFood(1.1);
     }
-  }, [foodPrices]);
+  }, [animateExpand]);
 
+  //Dispara o preço e tamanho da comida
   useEffect(() => {
-    if (selectedButton === sizes[0].key) {
-      setFoodPrices(prices.price_small);
-    } else if (selectedButton === sizes[1].key) {
-      setFoodPrices(prices.price_medium);
+    if (selectedFoodSize === sizes[0].key) {
+      setAnimateExpand(0);
+    } else if (selectedFoodSize === sizes[1].key) {
+      setAnimateExpand(1);
     } else {
-      setFoodPrices(prices.price_large);
+      setAnimateExpand(2);
     }
-  }, [selectedButton]);
+  }, [selectedFoodSize]);
 
+  //Rotação
   const rotate = rotateFood.interpolate({
     inputRange: [0, 1],
     outputRange: ['0deg', '90deg'],
   });
 
+  //Expansão
   const expand = expandSizeFood.interpolate({
     inputRange: [0, 1],
     outputRange: [260, 400],
@@ -69,21 +77,8 @@ const FoodSizes = ({ prices, image }) => {
           }}
         />
       </FoodImageContainer>
-      <PriceDescription price={foodPrices} />
-      <SizesButtonsRadioGroup>
-        {sizes.map((size, index) => (
-          <SizeButton
-            selectedSize={selectedButton === size.key}
-            midle={index === 1}
-            onPress={() => setSelectedButton(size.key)}>
-            <SizeButtonTxt selectedSize={selectedButton === size.key}>
-              {size.text}
-            </SizeButtonTxt>
-          </SizeButton>
-        ))}
-      </SizesButtonsRadioGroup>
     </Container>
   );
 };
 
-export default FoodSizes;
+export default AnimatedFoodSize;
