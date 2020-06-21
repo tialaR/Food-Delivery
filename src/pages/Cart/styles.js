@@ -1,6 +1,11 @@
 import styled from 'styled-components/native';
 import { colors } from '../../styles/colors';
 
+export const Container = styled.View`
+  flex: 1;
+  background-color: ${colors.background};
+`;
+
 export const CartCardContainer = styled.View`
   flex-direction: row;
   align-items: center;
@@ -20,12 +25,16 @@ export const CartCardContainerDescriptions = styled.View`
   flex: 1;
 `;
 
-export const CartCardFoodName = styled.Text.attrs({
-  numberOfLines: 1,
-})`
+export const CartCardFoodName = styled.Text`
   font-size: 16px;
   color: ${colors.grayDark};
   padding-bottom: 6px;
+`;
+
+export const CartCardFoodAditionalItems = styled.Text`
+  font-size: 12px;
+  color: ${colors.grayLight};
+  padding-bottom: 8px;
 `;
 
 export const CartCardFoodQuant = styled.Text`
@@ -36,7 +45,7 @@ export const CartCardFoodQuant = styled.Text`
 export const CartCardFoodPrice = styled.Text`
   font-size: 16px;
   color: ${colors.primaryDark};
-  font-weight: 700;
+  font-weight: 500;
 `;
 
 export const CartCardContainerTrash = styled.TouchableOpacity.attrs({
