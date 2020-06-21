@@ -41,6 +41,6 @@ export const FoodIngredientsTxt = styled.Text.attrs({
 export const FoodPriceTxt = styled.Text`
   font-size: 16px;
   color: ${colors.primaryDark};
-  font-weight: 700,
+  font-weight: 700;
   padding-top: 20px;
 `;

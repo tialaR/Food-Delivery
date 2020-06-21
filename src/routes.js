@@ -3,6 +3,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import { View } from 'react-native';
 import 'react-native-gesture-handler';
+import HeaderCartButton from './components/HeaderCartButton';
+import Cart from './pages/Cart';
 import Food from './pages/Food';
 import Main from './pages/Main';
 import { colors } from './styles/colors';
@@ -42,18 +44,27 @@ function Routes() {
         }}>
         <Stack.Screen
           name="MainScreen"
-          options={{
-            title: 'Food Delivery',
-          }}
           component={Main}
+          options={({ navigation }) => ({
+            headerRight: () => (
+              <HeaderCartButton
+                onCartPress={() => navigation.navigate('CartScreen')}
+              />
+            ),
+          })}
         />
         <Stack.Screen
           name="FoodScreen"
-          options={{
-            title: 'Food Delivery',
-          }}
           component={Food}
+          options={({ navigation }) => ({
+            headerRight: () => (
+              <HeaderCartButton
+                onCartPress={() => navigation.navigate('CartScreen')}
+              />
+            ),
+          })}
         />
+        <Stack.Screen mode="modal" name="CartScreen" component={Cart} />
       </Stack.Navigator>
     </NavigationContainer>
   );
